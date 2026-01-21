@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김수빈 포트폴리오</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    
+    .section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px;
+    }
+    
+    .reveal {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .nav-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      z-index: 50;
+      transition: all 0.3s ease;
+    }
+    
+    .stat-card {
+      background: #F9FAFB;
+      transition: all 0.3s ease;
+    }
+    
+    .stat-card:hover {
+      background: #F3F4F6;
+      transform: translateY(-4px);
+    }
+    
+    .project-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .project-hover:hover {
+      transform: scale(1.02);
+    }
+    
+    @media (max-width: 768px) {
+      .section {
+        padding: 80px 20px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+<!-- Navigation -->
+<nav class="nav-fixed border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#" class="text-xl font-bold">김수빈 · B2C Digital Service Product Designer</a>
+    <div class="hidden md:flex gap-8">
+      <a href="#work" class="text-gray-600 hover:text-gray-900 transition">Work</a>
+      <a href="#career" class="text-gray-600 hover:text-gray-900 transition">Career</a>
+      <a href="#contact" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="section" style="min-height: 100vh;">
+  <div class="max-w-5xl mx-auto text-center">
+    <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight reveal">
+      고객 행동 데이터 기반,<br/>
+      전환율을 설계하는<br/>
+      프로덕트 디자이너
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-600 mb-12 reveal" style="transition-delay: 0.2s">
+      김수빈 · B2C Digital Service Product Designer
+    </p>
+    <div class="flex gap-6 justify-center text-lg text-gray-600 reveal" style="transition-delay: 0.4s">
+      <a href="mailto:richkarmen777@gmail.com" class="hover:text-gray-900">richkarmen777@gmail.com</a>
+      <span>·</span>
+      <a href="tel:01096970683" class="hover:text-gray-900">010-9697-0683</a>
+    </div>
+  </div>
+</section>
+
+<!-- Impact Numbers -->
+<section class="section bg-black text-white">
+  <div class="max-w-6xl mx-auto w-full">
+    <h2 class="text-5xl md:text-7xl font-bold mb-20 reveal">
+      만들어 온 성과의 기준
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="reveal">
+        <div class="text-7xl md:text-8xl font-bold mb-4">85%</div>
+        <div class="text-2xl font-semibold mb-2">CRM 메시지 평균 CTR</div>
+        <div class="text-lg text-gray-400">70% → 85% (+15%p 개선)</div>
+      </div>
+      
+      <div class="reveal" style="transition-delay: 0.1s">
+        <div class="text-7xl md:text-8xl font-bold mb-4">271%</div>
+        <div class="text-2xl font-semibold mb-2">바우처 판매</div>
+        <div class="text-lg text-gray-400">목표 대비 달성률</div>
+      </div>
+      
+      <div class="reveal" style="transition-delay: 0.2s">
+        <div class="text-7xl md:text-8xl font-bold mb-4">+21%</div>
+        <div class="text-2xl font-semibold mb-2">MAU 증가</div>
+        <div class="text-lg text-gray-400">멤버십 활성 사용자</div>
+      </div>
+      
+      <div class="reveal" style="transition-delay: 0.3s">
+        <div class="text-7xl md:text-8xl font-bold mb-4">87%</div>
+        <div class="text-2xl font-semibold mb-2">전환율</div>
+        <div class="text-lg text-gray-400">UX/UI 개선 후</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="work" class="section" style="min-height: auto; padding: 160px 24px;">
+  <div class="max-w-6xl mx-auto w-full">
+    <h2 class="text-5xl md:text-7xl font-bold mb-20 reveal">주요 프로젝트</h2>
+    
+    <!-- Project 1 -->
+    <div class="project-hover mb-32 reveal">
+      <div class="mb-6">
+        <span class="text-sm font-semibold text-gray-500">PROJECT 1</span>
+      </div>
+      <a href="https://karmenkim.notion.site/PM-280dcf17b3a944358a9498577a29e82d" target="_blank" class="group">
+        <h3 class="text-4xl md:text-6xl font-bold mb-8 leading-tight group-hover:opacity-70 transition">
+          제네시스 B2C 디지털 서비스<br/>UX 고도화 →
+        </h3>
+      </a>
+      <div class="text-xl text-gray-600 mb-12">
+        2022.11 - 현재 · PM, 서비스 기획 100%
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="stat-card p-8 rounded-3xl">
+          <div class="text-sm font-semibold text-gray-500 mb-2">CTR</div>
+          <div class="text-3xl font-bold">70% → 85%</div>
+        </div>
+        <div class="stat-card p-8 rounded-3xl">
+          <div class="text-sm font-semibold text-gray-500 mb-2">바우처</div>
+          <div class="text-3xl font-bold">271%</div>
+        </div>
+        <div class="stat-card p-8 rounded-3xl">
+          <div class="text-sm font-semibold text-gray-500 mb-2">MAU</div>
+          <div class="text-3xl font-bold">+21%</div>
+        </div>
+      </div>
+      
+      <div class="bg-gray-50 p-10 rounded-3xl mb-8">
+        <h4 class="text-2xl font-bold mb-6">Problem</h4>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>• 공급자 중심 메시지 구조 → CTR 70%</li>
+          <li>• 복잡한 혜택 구조 → 스크롤 37,000px</li>
+          <li>• 온-오프라인 분절된 고객 여정</li>
+        </ul>
+      </div>
+      
+      <div class="space-y-4 mb-8">
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <h5 class="text-xl font-bold mb-3">CRM 메시지 최적화</h5>
+          <p class="text-lg text-gray-700">고객 여정 기반 재설계 → CTR 85% (+15%p)</p>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <h5 class="text-xl font-bold mb-3">멤버십 IA 재구성</h5>
+          <p class="text-lg text-gray-700">스크롤 90% 축소, MAU +21%, 조회수 +41%</p>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <h5 class="text-xl font-bold mb-3">O2O 바우처 UX</h5>
+          <p class="text-lg text-gray-700">통합 플로우 설계 → 판매 목표 대비 271%</p>
+        </div>
+      </div>
+      
+      <div class="bg-black text-white p-10 rounded-3xl mb-8">
+        <h4 class="text-2xl font-bold mb-6">Key Insights</h4>
+        <ul class="space-y-3 text-lg">
+          <li>• 고객이 '지금 필요한 정보'를 '적절한 타이밍'에 전달하는 것이 핵심</li>
+          <li>• 정보의 양보다 정보 위계가 사용자 몰입에 더 큰 영향</li>
+          <li>• 온-오프라인 통합 UX가 서비스 전체 만족도를 결정</li>
+        </ul>
+      </div>
+      
+      <a href="https://karmenkim.notion.site/PM-280dcf17b3a944358a9498577a29e82d" target="_blank" class="inline-flex items-center gap-2 text-lg font-semibold hover:opacity-70 transition">
+        상세 프로세스 보기 →
+      </a>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="project-hover mb-32 reveal">
+      <div class="mb-6">
+        <span class="text-sm font-semibold text-gray-500">PROJECT 2</span>
+      </div>
+      <a href="https://karmenkim.notion.site/UX-bce425f1f5b34c2da6804b170b33941c" target="_blank" class="group">
+        <h3 class="text-4xl md:text-6xl font-bold mb-8 leading-tight group-hover:opacity-70 transition">
+          기아플렉스 O2O 온디맨드<br/>구독 재설계 →
+        </h3>
+      </a>
+      <div class="text-xl text-gray-600 mb-12">
+        2022.05 - 2022.11 · Product Designer 100%
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <h4 class="text-xl font-bold mb-4">Problem</h4>
+          <p class="text-lg text-gray-700">탁송 기사 의존으로 예약 리드타임 3일 소요 → 고객 이탈</p>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <h4 class="text-xl font-bold mb-4">Solution</h4>
+          <p class="text-lg text-gray-700">거점 픽업 모델 → 예약 즉시 대여 가능 (당일)</p>
+        </div>
+      </div>
+      
+      <div class="bg-black text-white p-10 rounded-3xl mb-8">
+        <div class="text-2xl font-bold mb-4">Impact</div>
+        <p class="text-lg">대여 리드타임 3일 → 당일 / 온디맨드 구조 구축 / 단기 구독 유저 확보</p>
+      </div>
+      
+      <a href="https://karmenkim.notion.site/UX-bce425f1f5b34c2da6804b170b33941c" target="_blank" class="inline-flex items-center gap-2 text-lg font-semibold hover:opacity-70 transition">
+        상세 프로세스 보기 →
+      </a>
+    </div>
+    
+    <!-- Project 3 -->
+    <div class="project-hover reveal">
+      <div class="mb-6">
+        <span class="text-sm font-semibold text-gray-500">PROJECT 3</span>
+      </div>
+      <a href="https://karmenkim.notion.site/AR-ALICE-UX-c58768e09a234be1a6be2d9b984c7e96" target="_blank" class="group">
+        <h3 class="text-4xl md:text-6xl font-bold mb-8 leading-tight group-hover:opacity-70 transition">
+          상황인지 기반<br/>AR 장소 탐색 서비스 PoC →
+        </h3>
+      </a>
+      <div class="text-xl text-gray-600 mb-12">
+        2020.06 - 2021.12 · 서비스 기획, UX/UI 100%
+      </div>
+      
+      <div class="inline-block mb-8 px-6 py-3 bg-yellow-100 text-yellow-900 rounded-full font-bold text-lg">
+        🏆 iF Design Award 2021
+      </div>
+      
+      <div class="bg-gray-50 p-10 rounded-3xl mb-8">
+        <h4 class="text-2xl font-bold mb-4">핵심 혁신</h4>
+        <p class="text-lg text-gray-700 mb-4">사용자 맥락(속도/거리)에 따라 AR 정보 밀도를 동적으로 조절</p>
+        <p class="text-lg text-gray-700">→ 인지 부담 감소, 라스트 마일 탐색 성공률 향상</p>
+      </div>
+      
+      <div class="bg-black text-white p-10 rounded-3xl mb-8">
+        <div class="text-2xl font-bold mb-4">Achievement</div>
+        <p class="text-lg">iF Design Award 2021 수상 / 글로벌 공개 특허 발명 / PoC 프로토타입 완성</p>
+      </div>
+      
+      <a href="https://karmenkim.notion.site/AR-ALICE-UX-c58768e09a234be1a6be2d9b984c7e96" target="_blank" class="inline-flex items-center gap-2 text-lg font-semibold hover:opacity-70 transition">
+        상세 프로세스 보기 →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Career -->
+<section id="career" class="section bg-gray-50">
+  <div class="max-w-6xl mx-auto w-full">
+    <h2 class="text-5xl md:text-7xl font-bold mb-20 reveal">경력</h2>
+    
+    <div class="space-y-16">
+      <div class="reveal">
+        <div class="text-sm font-semibold text-gray-500 mb-4">2022.11 - 현재</div>
+        <h3 class="text-3xl md:text-5xl font-bold mb-4">현대자동차 제네시스사업본부</h3>
+        <div class="text-xl text-gray-600 mb-6">B2C 디지털 서비스 기획 및 Growth PM</div>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>• CRM 커뮤니케이션 최적화: CTR 70% → 85%</li>
+          <li>• O2O 바우처 서비스: 판매 목표 대비 271%</li>
+          <li>• 멤버십 UX 개선: MAU +21%, 조회수 +41%</li>
+        </ul>
+      </div>
+      
+      <div class="reveal">
+        <div class="text-sm font-semibold text-gray-500 mb-4">2019.07 - 2022.11</div>
+        <h3 class="text-3xl md:text-5xl font-bold mb-4">현대자동차 TaaS본부 / 전략기술본부</h3>
+        <div class="text-xl text-gray-600 mb-6">신규 비즈니스 서비스 기획 및 UX 설계</div>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>• 기아플렉스 구독: 리드타임 3일 → 당일</li>
+          <li>• AR POI 서비스: iF Design Award 2021</li>
+          <li class="flex items-center gap-2">
+            • 글로벌 공개 특허 31건 발명 
+            <a href="https://patents.google.com/?inventor=SOOBIN&assignee=HYUNDAI+MOTOR+COMPANY&oq=HYUNDAI+MOTOR+COMPANY+SOOBIN" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold hover:bg-blue-100 transition">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/>
+              </svg>
+              Google Patents
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="mt-20 reveal">
+      <h3 class="text-3xl md:text-4xl font-bold mb-12">핵심 역량</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="stat-card p-8 rounded-3xl">
+          <div class="text-4xl mb-4">🎯</div>
+          <div class="text-xl font-bold mb-2">UX Strategy</div>
+          <div class="text-gray-600">고객 여정 기반 서비스 구조 설계</div>
+        </div>
+        <div class="stat-card p-8 rounded-3xl">
+          <div class="text-4xl mb-4">📊</div>
+          <div class="text-xl font-bold mb-2">Data-Driven</div>
+          <div class="text-gray-600">Funnel 분석 및 전환율 개선</div>
+        </div>
+        <div class="stat-card p-8 rounded-3xl">
+          <div class="text-4xl mb-4">🤝</div>
+          <div class="text-xl font-bold mb-2">Collaboration</div>
+          <div class="text-gray-600">기획-디자인-개발 협업 리딩</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-5xl md:text-7xl font-bold mb-12 reveal">
+      Let's Connect
+    </h2>
+    <div class="space-y-6 text-xl text-gray-600 reveal" style="transition-delay: 0.2s">
+      <div>
+        <a href="mailto:richkarmen777@gmail.com" class="hover:text-gray-900 transition">richkarmen777@gmail.com</a>
+      </div>
+      <div>
+        <a href="tel:01096970683" class="hover:text-gray-900 transition">010-9697-0683</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-gray-100 py-12">
+  <div class="max-w-6xl mx-auto px-6 text-center text-gray-500">
+    <p>© 2026 김수빈. All rights reserved.</p>
+    <p>이 웹사이트는 Claude code 기반으로 작성되었습니다.</p>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  reveals.forEach(reveal => revealObserver.observe(reveal));
+  
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
