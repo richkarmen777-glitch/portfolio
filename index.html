@@ -28,6 +28,7 @@
       font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
+      max-width: 100vw;
     }
     
     .section {
@@ -79,10 +80,37 @@
     }
     
     @media (max-width: 768px) {
-      .section {
-        padding: 80px 20px;
-      }
-    }
+  .section {
+    padding: 80px 16px;
+  }
+  
+  /* Hero 제목 */
+  h1.text-6xl,
+  h1.md\:text-8xl {
+    font-size: 2.25rem !important;
+    line-height: 1.15 !important;
+  }
+  
+  /* 섹션 제목 */
+  h2.text-5xl,
+  .text-5xl.md\:text-7xl {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* 프로젝트 제목 */
+  h3.text-4xl,
+  .text-4xl.md\:text-6xl {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* 통계 숫자 */
+  .text-7xl,
+  .text-8xl {
+    font-size: 3rem !important;
+  }
+}
   </style>
 </head>
 <body class="bg-white text-gray-900">
